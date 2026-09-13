@@ -102,6 +102,7 @@ header{
     }
     .sobre {
         flex-direction: column;
+        margin-top: 20px;
     }
     .sobre h1{
 
