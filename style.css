@@ -1,0 +1,116 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: cadetblue;
+    font-family: Poppins, sans-serif;
+    
+
+}
+li ,  button {
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 15px;
+    background-color: aliceblue;
+    height: 125px;
+}
+.logo {
+
+   width: 150px; /* Pode aumentar à vontade agora */
+    
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    white-space: nowrap 
+}
+
+
+.nav-links li {
+    list-style: none;
+  
+}
+
+
+.nav-links li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bolder;
+   
+    padding: 8px 20px; 
+    background-color: skyblue;
+    border-radius: 20px; 
+}
+.nav-links li a:hover{
+    color: blue;
+}
+.contato {
+    background-color: skyblue;
+    padding: 10px 20px;
+    border: none;
+    border-radius:60px;
+    cursor:pointer;
+    margin-right: 20px;
+    font-weight: bolder;
+}
+.sobre{
+    margin-top: 200px;
+    text-align: center;
+}
+
+
+@media (max-width:800px ){
+    header {
+        justify-content: flex-start;
+        gap: 15px;
+        padding: 10px 5px;
+        height: 100px;
+    }
+    .nav-links{
+        display:flex;
+        flex-direction:row;
+        gap:7px;
+    }
+    .nav-links li {
+        padding: 0;
+    }
+    .nav-links li a {
+        font-size: 14px;
+        padding: 5px 10px;
+        margin-left: 0;
+    }
+    button{
+     display: none;
+    }
+    .logo {
+        width:100px;
+    }
+    .sobre {
+        flex-direction: column;
+    }
+    .sobre h1{
+
+        margin:10px 0px 10px 10px;
+        text-align: left;
+        font-size: 40px;
+    }
+    .sobre p{
+        margin:10px 0px 10px 10px;
+        font-size: 35px;
+    }
+}
